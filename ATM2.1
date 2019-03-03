@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int t, n, k;
+	cin>>t;
+	while(t--)
+	{
+		cin>>n>>k;
+		int a[n], i=0;
+		for(i=0;i<n;i++)
+			cin>>a[i];
+		for(i=0;i<n;i++)
+		{
+			if(a[i]<=k)
+			{
+				cout<<"1";
+				k-=a[i];
+			}
+			else
+				cout<<"0";
+		}
+		cout<<endl;	
+	}
+	return 0;
+}
